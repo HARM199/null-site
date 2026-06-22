@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { categories } from "../data";
 
 export default function Category() {
-
   const { name } = useParams();
 
   const category = categories.find(
@@ -44,8 +43,8 @@ export default function Category() {
                     ...styles.badge,
                     backgroundColor:
                       item.type === "free"
-                        ? "green"
-                        : "red",
+                        ? "#009933"
+                        : "#8B0000",
                   }}
                 >
                   {item.type.toUpperCase()}
@@ -60,58 +59,54 @@ export default function Category() {
 
             </div>
 
-            <h3>{item.title}</h3>
+            <div style={styles.content}>
+              <h3 style={styles.name}>
+                {item.title}
+              </h3>
 
-            <p>{item.desc}</p>
+              <p style={styles.desc}>
+                {item.desc}
+              </p>
 
-            {/* ========================= */}
-            {/* 🎓 COURSE MODE */}
-            {/* ========================= */}
+              {category.mode === "course" && (
+                <>
+                  {item.type === "free" ? (
+                    <a
+                      href={item.download}
+                      style={styles.freeBtn}
+                    >
+                      Download
+                    </a>
+                  ) : (
+                    <a
+                      href={`https://t.me/HARM19995?text=Hello%20I%20want%20to%20buy:%20${item.title}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={styles.payBtn}
+                    >
+                      🔒 Request Now
+                    </a>
+                  )}
+                </>
+              )}
 
-            {category.mode === "course" && (
-              <>
-                {item.type === "free" ? (
-                  <a
-                    href={item.download}
-                    style={styles.freeBtn}
-                  >
-                    Download
-                  </a>
-                ) : (
-                  <a
-                    href={`https://t.me/HARM19995?text=Hello%20I%20want%20to%20buy:%20${item.title}`}
-                    target="_blank"
-                    style={styles.payBtn}
-                  >
-                    🔒 Request Now 
-                  </a>
-                )}
-              </>
-            )}
+              {category.mode === "go" && (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={styles.goBtn}
+                >
+                  GO
+                </a>
+              )}
 
-            {/* ========================= */}
-            {/* 🖥️ GO MODE */}
-            {/* ========================= */}
-
-            {category.mode === "go" && (
-              <a
-                href={item.link}
-                target="_blank"
-                style={styles.goBtn}
-              >
-                GO
-              </a>
-            )}
-
-            {/* ========================= */}
-            {/* 🌐 LINKS MODE */}
-            {/* ========================= */}
-
-            {category.mode === "links" && (
-              <div style={styles.linkBox}>
-                {item.link}
-              </div>
-            )}
+              {category.mode === "links" && (
+                <div style={styles.linkBox}>
+                  {item.link}
+                </div>
+              )}
+            </div>
 
           </div>
 
@@ -126,30 +121,33 @@ export default function Category() {
 const styles = {
 
   container: {
-    backgroundColor: "#000",
+    background:
+      "radial-gradient(circle at top,#220000,#000)",
     minHeight: "100vh",
     color: "white",
-    padding: "30px",
+    padding: "20px",
   },
 
   title: {
     textAlign: "center",
-    marginBottom: "30px",
+    marginBottom: "35px",
+    letterSpacing: "3px",
+    textShadow: "0 0 20px red",
   },
 
   grid: {
     display: "grid",
     gridTemplateColumns:
-      "repeat(auto-fit,minmax(300px,1fr))",
+      "repeat(auto-fit,minmax(260px,1fr))",
     gap: "20px",
   },
 
   card: {
     backgroundColor: "#111",
-    borderRadius: "10px",
+    borderRadius: "18px",
     overflow: "hidden",
-    border: "1px solid #222",
-    paddingBottom: "20px",
+    border: "1px solid #330000",
+    boxShadow: "0 0 20px rgba(255,0,0,.25)",
   },
 
   imageWrapper: {
@@ -158,73 +156,97 @@ const styles = {
 
   image: {
     width: "100%",
-    height: "200px",
+    height: "180px",
     objectFit: "cover",
+    display: "block",
+  },
+
+  content: {
+    padding: "15px",
+  },
+
+  name: {
+    fontSize: "18px",
+    marginBottom: "10px",
+    lineHeight: "1.4",
+  },
+
+  desc: {
+    color: "#aaa",
+    fontSize: "14px",
   },
 
   badge: {
     position: "absolute",
     top: "10px",
     left: "10px",
-    padding: "5px 10px",
-    borderRadius: "5px",
+    padding: "6px 10px",
+    borderRadius: "8px",
     color: "white",
     fontSize: "12px",
+    fontWeight: "bold",
   },
 
   tag: {
     position: "absolute",
     top: "10px",
     right: "10px",
-    padding: "5px 10px",
-    borderRadius: "5px",
+    padding: "6px 10px",
+    borderRadius: "8px",
     backgroundColor: "orange",
-    color: "black",
+    color: "#000",
     fontSize: "12px",
+    fontWeight: "bold",
   },
 
   freeBtn: {
     display: "block",
-    backgroundColor: "green",
+    background: "#008f11",
     color: "white",
     textAlign: "center",
-    padding: "10px",
-    margin: "15px",
-    borderRadius: "5px",
+    padding: "12px",
+    marginTop: "15px",
+    borderRadius: "10px",
     textDecoration: "none",
+    fontWeight: "bold",
+    boxShadow: "0 0 15px green",
   },
 
   payBtn: {
     display: "block",
-    backgroundColor: "red",
+    background: "#8B0000",
     color: "white",
     textAlign: "center",
-    padding: "10px",
-    margin: "15px",
-    borderRadius: "5px",
+    padding: "12px",
+    marginTop: "15px",
+    borderRadius: "10px",
     textDecoration: "none",
+    fontWeight: "bold",
+    boxShadow: "0 0 15px red",
   },
 
   goBtn: {
     display: "block",
-    backgroundColor: "#0066ff",
+    background: "#0066ff",
     color: "white",
     textAlign: "center",
-    padding: "10px",
-    margin: "15px",
-    borderRadius: "5px",
+    padding: "12px",
+    marginTop: "15px",
+    borderRadius: "10px",
     textDecoration: "none",
     fontWeight: "bold",
+    boxShadow: "0 0 15px #0066ff",
   },
 
   linkBox: {
     backgroundColor: "#000",
     border: "1px solid #333",
     padding: "10px",
-    margin: "15px",
-    borderRadius: "5px",
+    marginTop: "15px",
+    borderRadius: "10px",
     wordBreak: "break-all",
     color: "#00ff99",
     fontSize: "13px",
   },
+
 };

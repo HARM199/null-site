@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Door() {
   const [openAnim, setOpenAnim] = useState(false);
+  const [visitors, setVisitors] = useState("...");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("https://api.countapi.xyz/hit/harm199/null-site")
+      .then((res) => res.json())
+      .then((data) => setVisitors(data.value))
+      .catch(() => setVisitors("?"));
+  }, []);
 
   const openDoor = () => {
     const audio = new Audio("/assets/door-open.mp3");
@@ -18,8 +26,12 @@ export default function Door() {
 
   return (
     <div style={styles.container}>
-      <div style={styles.scene}>
 
+      <div style={styles.counter}>
+        👁 Visitors : {visitors}
+      </div>
+
+      <div style={styles.scene}>
         <div
           style={{
             ...styles.door,
@@ -30,18 +42,22 @@ export default function Door() {
           }}
           onClick={openDoor}
         />
-
       </div>
 
       <h1 style={styles.title}>HARM</h1>
-      <p style={styles.hint}>Click the door to enter</p>
+
+      <p style={styles.hint}>
+        Click the door to enter
+      </p>
+
     </div>
   );
 }
 
 const styles = {
   container: {
-    backgroundColor: "#000",
+    background:
+      "radial-gradient(circle,#160000,#000)",
     height: "100vh",
     display: "flex",
     flexDirection: "column",
@@ -51,6 +67,14 @@ const styles = {
     overflow: "hidden",
   },
 
+  counter: {
+    color: "#00ffcc",
+    fontSize: "20px",
+    marginBottom: "40px",
+    textShadow: "0 0 15px #00ffcc",
+    letterSpacing: "2px",
+  },
+
   scene: {
     transformStyle: "preserve-3d",
   },
@@ -58,22 +82,25 @@ const styles = {
   door: {
     width: "220px",
     height: "340px",
-    backgroundColor: "#8B0000",
+    background:
+      "linear-gradient(145deg,#8B0000,#300)",
     border: "5px solid #300",
     boxShadow: "0 0 80px red",
     cursor: "pointer",
     transformOrigin: "left center",
     transition: "transform 1.2s ease, opacity 1.2s ease",
+    borderRadius: "10px",
   },
 
   title: {
     color: "white",
     marginTop: "20px",
-    letterSpacing: "5px",
+    letterSpacing: "7px",
+    textShadow: "0 0 20px red",
   },
 
   hint: {
-    color: "#777",
+    color: "#888",
     fontSize: "14px",
   },
 };
