@@ -4,8 +4,6 @@ import { categories } from "../data";
 export default function Dashboard() {
   const navigate = useNavigate();
 
-  const isMobile = window.innerWidth <= 768;
-
   return (
     <div style={styles.container}>
 
@@ -22,16 +20,9 @@ export default function Dashboard() {
         </a>
       </div>
 
-      <h1 style={styles.title}>Dashboard</h1>
+      <h1 style={styles.title}>HARM Dashboard</h1>
 
-      <div
-        style={{
-          ...styles.grid,
-          gridTemplateColumns: isMobile
-            ? "repeat(2,1fr)"
-            : "repeat(4,1fr)",
-        }}
-      >
+      <div style={styles.grid}>
         {categories.map((cat) => (
           <div
             key={cat.name}
@@ -39,7 +30,6 @@ export default function Dashboard() {
               ...styles.card,
               opacity: cat.locked ? 0.5 : 1,
               cursor: cat.locked ? "not-allowed" : "pointer",
-              position: "relative",
             }}
             onClick={() => {
               if (!cat.locked) {
@@ -47,22 +37,11 @@ export default function Dashboard() {
               }
             }}
           >
-            <div
-              style={{
-                ...styles.icon,
-                fontSize: isMobile ? "40px" : "30px",
-              }}
-            >
+            <div style={styles.icon}>
               {cat.icon}
             </div>
 
-            <h3
-              style={{
-                fontSize: isMobile ? "22px" : "18px",
-              }}
-            >
-              {cat.title}
-            </h3>
+            <h3>{cat.title}</h3>
 
             {cat.locked && (
               <div style={styles.comingSoon}>
@@ -72,13 +51,16 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }
 
 const styles = {
+
   container: {
-    backgroundColor: "#000",
+    background:
+      "radial-gradient(circle at top,#220000,#000)",
     minHeight: "100vh",
     color: "white",
     padding: "20px",
@@ -88,59 +70,58 @@ const styles = {
     display: "flex",
     justifyContent: "flex-end",
     gap: "20px",
-    marginBottom: "20px",
+    marginBottom: "30px",
     flexWrap: "wrap",
   },
 
   telegram: {
     color: "#229ED9",
-    textDecoration: "none",
     fontWeight: "bold",
   },
 
   youtube: {
-    color: "#FF0000",
-    textDecoration: "none",
+    color: "#ff0000",
     fontWeight: "bold",
   },
 
   title: {
     textAlign: "center",
-    marginBottom: "30px",
+    marginBottom: "40px",
+    letterSpacing: "4px",
+    textShadow: "0 0 20px red",
   },
 
   grid: {
     display: "grid",
+    gridTemplateColumns:
+      "repeat(auto-fit,minmax(180px,1fr))",
     gap: "20px",
   },
 
   card: {
-    backgroundColor: "#111",
-    borderRadius: "12px",
-    border: "1px solid #222",
+    background: "#111",
+    border: "1px solid #330000",
+    borderRadius: "15px",
     textAlign: "center",
-    minHeight: "180px",
-
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    padding: "30px 15px",
+    transition: ".3s",
+    boxShadow: "0 0 20px rgba(255,0,0,.3)",
+    position: "relative",
   },
 
   icon: {
-    marginBottom: "10px",
+    fontSize: "50px",
+    marginBottom: "15px",
   },
 
   comingSoon: {
-    position: "absolute",
-    bottom: "10px",
-    left: "50%",
-    transform: "translateX(-50%)",
-    backgroundColor: "orange",
-    color: "black",
-    padding: "5px 10px",
-    borderRadius: "5px",
-    fontSize: "10px",
+    marginTop: "15px",
+    background: "orange",
+    color: "#000",
+    padding: "5px",
+    borderRadius: "8px",
     fontWeight: "bold",
+    fontSize: "12px",
   },
+
 };
