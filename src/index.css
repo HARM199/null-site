@@ -1,20 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #000;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 40px red; }
-  50% { box-shadow: 0 0 80px red; }
-  100% { box-shadow: 0 0 40px red; }
+  0% {
+    box-shadow: 0 0 40px red;
+  }
+
+  50% {
+    box-shadow: 0 0 80px red;
+  }
+
+  100% {
+    box-shadow: 0 0 40px red;
+  }
 }
 
 @keyframes flicker {
-  0% { opacity: 0.05; }
-  50% { opacity: 0.2; }
-  100% { opacity: 0.05; }
+  0% {
+    opacity: 0.05;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.05;
+  }
 }
+
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(255,0,0,0.2);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
 }

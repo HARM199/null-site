@@ -4,17 +4,34 @@ import { categories } from "../data";
 export default function Dashboard() {
   const navigate = useNavigate();
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div style={styles.container}>
 
       <div style={styles.topbar}>
-        <a href="https://t.me/HARM_1996" style={styles.telegram}>Telegram</a>
-        <a href="https://youtube.com/@harm1903?si=QlpKuDppcsCVT9Qw" style={styles.youtube}>YouTube</a>
+        <a href="https://t.me/HARM_1996" style={styles.telegram}>
+          Telegram
+        </a>
+
+        <a
+          href="https://youtube.com/@harm1903?si=QlpKuDppcsCVT9Qw"
+          style={styles.youtube}
+        >
+          YouTube
+        </a>
       </div>
 
       <h1 style={styles.title}>Dashboard</h1>
 
-      <div style={styles.grid}>
+      <div
+        style={{
+          ...styles.grid,
+          gridTemplateColumns: isMobile
+            ? "repeat(2,1fr)"
+            : "repeat(4,1fr)",
+        }}
+      >
         {categories.map((cat) => (
           <div
             key={cat.name}
@@ -30,8 +47,22 @@ export default function Dashboard() {
               }
             }}
           >
-            <div style={styles.icon}>{cat.icon}</div>
-            <h3>{cat.title}</h3>
+            <div
+              style={{
+                ...styles.icon,
+                fontSize: isMobile ? "40px" : "30px",
+              }}
+            >
+              {cat.icon}
+            </div>
+
+            <h3
+              style={{
+                fontSize: isMobile ? "22px" : "18px",
+              }}
+            >
+              {cat.title}
+            </h3>
 
             {cat.locked && (
               <div style={styles.comingSoon}>
@@ -41,18 +72,16 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
-
     </div>
   );
 }
 
 const styles = {
-
   container: {
     backgroundColor: "#000",
     minHeight: "100vh",
     color: "white",
-    padding: "30px",
+    padding: "20px",
   },
 
   topbar: {
@@ -60,6 +89,7 @@ const styles = {
     justifyContent: "flex-end",
     gap: "20px",
     marginBottom: "20px",
+    flexWrap: "wrap",
   },
 
   telegram: {
@@ -81,20 +111,23 @@ const styles = {
 
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
     gap: "20px",
   },
 
   card: {
     backgroundColor: "#111",
-    padding: "30px",
-    textAlign: "center",
     borderRadius: "12px",
     border: "1px solid #222",
+    textAlign: "center",
+    minHeight: "180px",
+
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   icon: {
-    fontSize: "30px",
     marginBottom: "10px",
   },
 
@@ -106,8 +139,8 @@ const styles = {
     backgroundColor: "orange",
     color: "black",
     padding: "5px 10px",
-    fontSize: "10px",
     borderRadius: "5px",
+    fontSize: "10px",
     fontWeight: "bold",
   },
 };
