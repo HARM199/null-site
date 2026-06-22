@@ -3,14 +3,15 @@ import { useNavigate } from "react-router-dom";
 
 export default function Door() {
   const [openAnim, setOpenAnim] = useState(false);
-  const [visitors, setVisitors] = useState("...");
+  const [time, setTime] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://api.countapi.xyz/hit/harm199/null-site")
-      .then((res) => res.json())
-      .then((data) => setVisitors(data.value))
-      .catch(() => setVisitors("?"));
+    const timer = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => clearInterval(timer);
   }, []);
 
   const openDoor = () => {
@@ -27,12 +28,17 @@ export default function Door() {
   return (
     <div style={styles.container}>
 
-      {/* خلفية النجوم */}
+      {/* النجوم */}
       <div style={styles.stars}></div>
 
-      {/* عداد الزوار */}
-      <div style={styles.counter}>
-        👁 Visitors : {visitors}
+      {/* عين حورس */}
+      <div style={styles.eye}>
+        ☥
+      </div>
+
+      {/* الساعة */}
+      <div style={styles.clock}>
+        {time}
       </div>
 
       {/* الباب */}
@@ -46,21 +52,17 @@ export default function Door() {
             opacity: openAnim ? 0 : 1,
           }}
           onClick={openDoor}
-        />
+        >
+          <div style={styles.handle}></div>
+        </div>
       </div>
 
       {/* العنوان */}
       <h1 style={styles.title}>HARM</h1>
 
-      {/* النص */}
       <p style={styles.hint}>
-        Click the door to enter
+        CLICK THE DOOR TO ENTER
       </p>
-
-      {/* الساعة */}
-      <div style={styles.clock}>
-        {new Date().toLocaleTimeString()}
-      </div>
 
     </div>
   );
@@ -68,16 +70,15 @@ export default function Door() {
 
 const styles = {
   container: {
-    background:
-      "radial-gradient(circle at center,#180000,#000)",
+    background: "radial-gradient(circle,#180000,#000)",
     height: "100vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    perspective: "1200px",
     overflow: "hidden",
     position: "relative",
+    perspective: "1200px",
   },
 
   stars: {
@@ -87,15 +88,23 @@ const styles = {
     background:
       "radial-gradient(white 1px, transparent 1px)",
     backgroundSize: "40px 40px",
-    opacity: "0.06",
+    opacity: 0.05,
   },
 
-  counter: {
-    color: "#00ffee",
-    fontSize: "18px",
-    marginBottom: "35px",
+  eye: {
+    color: "#FFD700",
+    fontSize: "55px",
+    textShadow: "0 0 20px gold",
+    marginBottom: "5px",
+    zIndex: 2,
+  },
+
+  clock: {
+    color: "#00ffcc",
+    fontSize: "16px",
     letterSpacing: "3px",
-    textShadow: "0 0 20px #00ffee",
+    textShadow: "0 0 15px #00ffcc",
+    marginBottom: "20px",
     zIndex: 2,
   },
 
@@ -107,38 +116,42 @@ const styles = {
   door: {
     width: "220px",
     height: "340px",
-    background:
-      "linear-gradient(145deg,#9b0000,#220000)",
-    border: "4px solid #300",
+    background: "linear-gradient(145deg,#8B0000,#300000)",
+    border: "4px solid #400",
     borderRadius: "12px",
     cursor: "pointer",
     transformOrigin: "left center",
     transition: "transform 1.2s ease, opacity 1.2s ease",
     boxShadow:
-      "0 0 30px red,0 0 70px rgba(255,0,0,.7)",
+      "0 0 40px red,0 0 100px rgba(255,0,0,.8)",
+    position: "relative",
+  },
+
+  handle: {
+    width: "15px",
+    height: "15px",
+    borderRadius: "50%",
+    background: "#ccc",
+    position: "absolute",
+    right: "25px",
+    top: "50%",
   },
 
   title: {
     color: "white",
-    marginTop: "25px",
+    marginTop: "18px",
+    marginBottom: "5px",
     letterSpacing: "10px",
+    fontSize: "48px",
     textShadow:
       "0 0 20px red,0 0 50px red",
     zIndex: 2,
   },
 
   hint: {
-    color: "#999",
-    fontSize: "14px",
-    letterSpacing: "2px",
-    zIndex: 2,
-  },
-
-  clock: {
-    marginTop: "20px",
-    color: "#00ff99",
-    textShadow: "0 0 15px #00ff99",
-    fontSize: "15px",
+    color: "#888",
+    letterSpacing: "3px",
+    fontSize: "13px",
     zIndex: 2,
   },
 };
