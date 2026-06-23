@@ -55,9 +55,15 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
       { id: 11, title: "BT MOB v4 [Android 15 RAT]", desc: "", image: "/images/bt.png", type: "HOT $10", tag: "", download: "#" },
       { id: 12, title: "DedSec - A Cybersecurity toolkit ", desc: "", image: "/images/kllg.jpeg", type: "free", tag: "", download: "DedSec - A Cybersecurity toolkit fur Termux" },
       { id: 13, title: "Craxsrat Clean version v7.6", desc: "", image: "/images/Craxsrat  v7.6.png", type: "$2", tag: "", download: "https://www.mediafire.com/file/bf21ctizpjmibjs/CraxsRat+7.6+Cracked.rar" },
-      { id: 14, title: "Ransomware Collection 2025", desc: "", image: "/images/Ransomware.png", type: "EGY 10 ", tag: "", download: "https://www.mediafire.com/download/9llu9i3yeeos0ox/Ransomware_Collection_2025.rar/https://mega.nz/file/DYwgHTJL#B89N3mo7i7TwhuONiIjbDngf9xI6I901Q5fSqC6Vm08" },
-
+      { id: 14, title: "Billionmail", desc: "", image: "/images/ty.png", type: "free", tag: "", download: "https://github.com/Billionmail/BillionMail" },
+      { id: 15, title: "ossium", desc: "", image: "/images/oss_gsocpage.webp", type: "free", tag: "", download: "https://ossium.live/home"},
+      { id: 16, title: "ruvnet", desc: "", image: "/images/v2-screen.png", type: "free", tag: "", download: "https://github.com/ruvnet/RuView"},
+      { id: 17, title: "awesome-osint-arsenal", desc: "", image: "/images/j.png", type: "free", tag: "", download: "https://github.com/rawfilejson/awesome-osint-arsenal"},
+      { id: 18, title: "public-apis", desc: "", image: "/images/jd.png", type: "free", tag: "", download: "https://github.com/public-apis/public-apis"},
+      { id: 19, title: "WEBFANG", desc: "", image: "/images/Webfang.png", type: "free", tag: "", download: "https://github.com/Talyx66/WEBFANG"},
+      { id: 20, title: "MoneyPrinterV2", desc: "", image: "/images/sds.png", type: "free", tag: "", download: "https://github.com/FujiwaraChoki/MoneyPrinterV2"}, 
     ]
+
   },
 
   {
@@ -67,8 +73,8 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
     mode: "course",
     locked: true,
     items: [
-      { id: 1, title: "Wireshark", desc: "Network analyzer", image: "https://via.placeholder.com/400x250", type: "free", tag: "NEW", download: "#" },
-      { id: 2, title: "Metasploit", desc: "Penetration testing", image: "https://via.placeholder.com/400x250", type: "free", tag: "", download: "#" },
+      { id: 1, title: "Billionmail", desc: "", image: "images/ty.png", type: "free", tag: "NEW", download: "https://github.com/Billionmail/BillionMail" },
+      { id: 2, title: "", desc: "", image: "", type: "free", tag: "", download: "" },
       { id: 3, title: "Nmap", desc: "Network scanner", image: "https://via.placeholder.com/400x250", type: "premium", tag: "HOT", download: "#" },
       { id: 4, title: "Burp Suite", desc: "Web security testing", image: "https://via.placeholder.com/400x250", type: "free", tag: "", download: "#" },
       { id: 5, title: "John the Ripper", desc: "Password cracking", image: "https://via.placeholder.com/400x250", type: "free", tag: "NEW", download: "#" },
