@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Door />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/category/:name" element={<Category />} />
+        <Route path="/category/:id" element={<Category />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

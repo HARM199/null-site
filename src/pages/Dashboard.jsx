@@ -33,7 +33,7 @@ export default function Dashboard() {
             }}
             onClick={() => {
               if (!cat.locked) {
-                navigate(`/category/${cat.name}`);
+                navigate(`/category/${cat.id}`);
               }
             }}
           >

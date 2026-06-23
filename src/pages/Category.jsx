@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 import { categories } from "../data";
 
 export default function Category() {
-  const { name } = useParams();
+  const { id } = useParams();
 
   const category = categories.find(
-    (cat) => cat.name === name
+    (cat) => cat.id === id
   );
 
   if (!category) {

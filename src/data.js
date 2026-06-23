@@ -1,4 +1,4 @@
-export const categories = [ { name: "courses", title: "Courses", icon: "🎓", mode: "course", locked: false, items: [
+export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mode: "course", locked: false, items: [
 
       { id: 1, title: "Udemy | Web Application Hacking & BurpSuite for Penetration Testing", desc: "", image: "/images/leak.jpg", type: "$2", tag: "NEW 2026", download: "https://www.mediafire.com/file/8d1zoof1wt8atok/Udemy-Web_Application_Hacking_&_BurpSuite_for_Penetration_Testing.7z" },
       { id: 2, title: "Udemy - Advanced Windows Active Directory Penetration Testing      ", desc: "", image: "/images/Screenshot.png", type: "$2", tag: "new 2026 ", download: "https://www.mediafire.com/file/40qmsxjswadvu6y/Freeeducationweb.com+Advanced+Windows+Active+Directory+Penetration+Testing.rar/file" },
@@ -18,7 +18,7 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   },
 
   {
-    name: "OS",
+    id: "OS",
     title: "OS",
     icon: "🖥️",
     mode: "course",
@@ -36,9 +36,9 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   },
 
   {
-    name: "tools",
+    id: "tools",
     title: "Tools",
-    icon: "🧰",
+    icon: "🛠️",
     mode: "course",
     locked: false,
     items: [ 
@@ -61,9 +61,9 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   },
 
   {
-    name: "leaks",
-    title: "leaks",
-    icon: "🔐",
+    id: "Power-Sites-You-Should-Know",
+    title: "Power-Sites-You-Should-Know",
+    icon: "☠️",
     mode: "course",
     locked: true,
     items: [
@@ -91,9 +91,9 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   },
 
   {
-    name: "Hardware",
-    title: "Hardware",
-    icon: "🤖",
+    id: "HARM",
+    title: "HARM",
+    icon: "⚡",
     mode: "course",
     locked: true,
     items: [
@@ -121,7 +121,7 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   },
 
   {
-    name: "Darkweb wiki",
+    id: "Darkweb wiki",
     title: "Darkweb wiki",
     icon: "🌐",
     mode: "links",
@@ -142,7 +142,7 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   {
     name: "Servant",
     title: "Servant",
-    icon: "⬇️",
+    icon: "🤖",
     mode: "course",
     locked: true,
     items: [
@@ -203,7 +203,7 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   {
     name: "systems",
     title: "Systems",
-    icon: "📱",
+    icon: "🎭",
     locked: true,
     items: []
   },
@@ -229,15 +229,15 @@ export const categories = [ { name: "courses", title: "Courses", icon: "🎓", m
   {
     name: "devops",
     title: "DevOps",
-    icon: "⚙️",
+    icon: "👾",
     locked: true,
     items: []
   },
 
   {
     name: "cyber",
-    title: "",
-    icon: "🕶️",
+    title: "cyber",
+    icon: "🛡️",
     locked: true,
     items: []
   },
