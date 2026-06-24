@@ -13,7 +13,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
       { id: 12, title: "big-bunty-hanting-v2", desc: "", image: "/images/images.png", type: "$3", tag: "update 2026 ", download: "#" },
       { id: 13, title: "wi-fi-hacking-v4", desc: "", image: "", type: "$3", tag: "NEW", download: "#" },
       { id: 14, title: "ip-camera-hacking", desc: "", image: "", type: "$8", tag: "NEW", download: "#" },
-      { id: 15, title: "CEH v13 (AI)", desc: "", image: "", type: "free", tag: "", download: "" },
+      { id: 15, title: "CEH v13 (AI)", desc: "", image: "/images/7.jpeg", type: "free", tag: "", download: "https://drive.google.com/file/d/1_H9NuXZ-jHM6OQ9mPK39XTPfasmqNpzo/view?usp=drive_link" },
     ]
   },
 
