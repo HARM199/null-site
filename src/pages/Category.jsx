@@ -73,9 +73,11 @@ export default function Category() {
                   {item.type === "free" ? (
                     <a
                       href={item.download}
+                      target="_blank"
+                      rel="noreferrer"
                       style={styles.freeBtn}
                     >
-                      Download
+                      {item.buttonText || "GO"}
                     </a>
                   ) : (
                     <a
