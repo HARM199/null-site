@@ -62,6 +62,8 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
       { id: 18, title: "public-apis", desc: "", image: "/images/jd.png", type: "free", tag: "", download: "https://github.com/public-apis/public-apis"},
       { id: 19, title: "WEBFANG", desc: "", image: "/images/Webfang.png", type: "free", tag: "", download: "https://github.com/Talyx66/WEBFANG"},
       { id: 20, title: "MoneyPrinterV2", desc: "", image: "/images/sds.png", type: "free", tag: "", download: "https://github.com/FujiwaraChoki/MoneyPrinterV2"}, 
+      { id: 21, title: "SubtitleEdit windows", desc: "", image: "/images/gggg.jpeg", type: "free", tag: "", download: "https://mega.nz/file/0rcQTLDK#JhkZHD1XQa-Wn6zHWuXpYpqRqHUVR28QFXMrl5xKk4U"},
+      { id: 21, title: "SubtitleEdit linux", desc: "", image: "/images/gggg.jpeg", type: "free", tag: "", download: "https://github.com/SubtitleEdit/subtitleedit"},
     ]
 
   },
