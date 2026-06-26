@@ -22,7 +22,7 @@ export default function Dashboard() {
 
 
        <a
-        href="https://t.me/https://t.me/+U_a4R23Ux9w0OTU0"
+        href="https://t.me/+U_a4R23Ux9w0OTU0"
         target="_blank"
         rel="noreferrer"
         style={styles.community}
