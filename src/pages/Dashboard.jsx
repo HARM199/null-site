@@ -18,8 +18,28 @@ export default function Dashboard() {
         >
           YouTube
         </a>
-   
-        </div>
+        
+
+
+       <a
+        href="https://t.me/https://t.me/+U_a4R23Ux9w0OTU0"
+        target="_blank"
+        rel="noreferrer"
+        style={styles.community}
+      >
+        💬 Community
+      </a>
+
+      <a
+        href="https://mega.nz/file/cFdUCI7Z#-yAs05pxEkN73OCY9CFrh1BP7kBrWOmY7laTzP0fhLI"
+        target="_blank"
+        rel="noreferrer"
+        style={styles.android}
+      >
+       📱 Android App
+      </a>
+ 
+      </div>
    
       <h1 style={styles.title}>HARM Dashboard</h1>
 
@@ -126,3 +146,4 @@ const styles = {
   },
 
 };
+                                                       
