@@ -31,9 +31,10 @@ export default function Door() {
       {/* النجوم */}
       <div style={styles.stars}></div>
 
-      {/* عين حورس */}
+      {/* النص العلوي - يمكنك تغييره لأي شيء */}
       <div style={styles.eye}>
-        ☥
+ the first rule:you don't need love you need make money
+                 Beware of women 
       </div>
 
       {/* الساعة */}
@@ -93,10 +94,17 @@ const styles = {
 
   eye: {
     color: "#FFD700",
-    fontSize: "55px",
-    textShadow: "0 0 20px gold",
-    marginBottom: "5px",
+    fontSize: "22px",
+    fontWeight: "bold",
+    letterSpacing: "6px",
+    textTransform: "uppercase",
+    textShadow:
+      "0 0 10px gold, 0 0 25px rgba(255,215,0,.8)",
+    marginBottom: "25px",
     zIndex: 2,
+    textAlign: "center",
+    maxWidth: "90%",
+    wordBreak: "break-word",
   },
 
   clock: {
@@ -104,7 +112,7 @@ const styles = {
     fontSize: "16px",
     letterSpacing: "3px",
     textShadow: "0 0 15px #00ffcc",
-    marginBottom: "20px",
+    marginBottom: "25px",
     zIndex: 2,
   },
 
