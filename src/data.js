@@ -1,3 +1,4 @@
+
 export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mode: "course", locked: false, items: [
 
       { id: 1, title: "Udemy | Web Application Hacking & BurpSuite for Penetration Testing", desc: "", image: "/images/leak.jpg", type: "$2", tag: "NEW 2026", download: "https://www.mediafire.com/file/8d1zoof1wt8atok/Udemy-Web_Application_Hacking_&_BurpSuite_for_Penetration_Testing.7z" },
@@ -74,28 +75,16 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
     icon: "☠️",
     mode: "course",
     buttonText:"GO",
-    locked: true,
+    locked: false,
     items: [
-      { id: 1, title: "adescargar", desc: "", image: "/images/adescargary.png", type: "free", tag: "", GO: "https://adescargar.net/" },
-      { id: 2, title: "", desc: "", image: "", type: "free", tag: "", download: "" },
-      { id: 3, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 4, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 5, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 6, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 7, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 8, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 9, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 10, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 11, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 12, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 13, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 14, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 15, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 16, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 17, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 18, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 19, title: "", desc: "", image: "", type: "free", tag: "", download: "#" },
-      { id: 20, title: "", desc: "", image: "", type: "free", tag: "", download: "#" }
+      { id: 1, title: "adescargar", desc: "", image: "/images/adescargary.png", type: "free", tag: "", download: "https://adescargar.net/" },
+      { id: 2, title: "openculture", desc: "", image: "/images/open.png", type: "free", tag: "", download: "https://www.openculture.com/" },
+      { id: 3, title: "haveibeenpwned", desc: "", image: "/images/have.jpeg", type: "free", tag: "", download: "https://haveibeenpwned.com/" },
+      { id: 4, title: "accountkiller", desc: "", image: "/images/killer.jpeg", type: "free", tag: "", download: "https://www.accountkiller.com/en/home" },
+      { id: 5, title: "explainshell", desc: "", image: "/images/explainshell.jpeg", type: "free", tag: "", download: "https://explainshell.com/" },
+      { id: 6, title: "pentestgpt", desc: "", image: "/images/pentest.jpeg", type: "free", tag: "", download: "https://pentestgpt.com/" },
+      { id: 7, title: "drivenlisten", desc: "", image: "/images/drived.jpeg", type: "free", tag: "", download: "https://drivenlisten.com/" },
+      { id: 8, title: "arena", desc: "", image: "/images/arena.png", type: "free", tag: "", download: "https://arena.ai/" },
     ]
   },
 
