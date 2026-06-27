@@ -1,52 +1,86 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { categories } from "../data";
 
 export default function Dashboard() {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div style={styles.container}>
 
-      <div style={styles.topbar}>
-        <a href="https://t.me/HARM_1996" style={styles.telegram}>
-          Telegram
-        </a>
+      {/* القائمة العائمة */}
+      <div style={styles.floatingMenu}>
 
-        <a
-          href="https://youtube.com/@harm1903?si=QlpKuDppcsCVT9Qw"
-          style={styles.youtube}
+        {menuOpen && (
+          <div style={styles.linksBox}>
+
+            <a
+              href="https://t.me/HARM_1996"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.circleBtn}
+              title="Telegram"
+            >
+              ✈️
+            </a>
+
+            <a
+              href="https://youtube.com/@harm1903?si=QlpKuDppcsCVT9Qw"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.circleBtn}
+              title="YouTube"
+            >
+              ▶️ 
+            </a>
+
+            <a
+              href="https://t.me/+U_a4R23Ux9w0OTU0"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.circleBtn}
+              title="Community"
+            >
+              💬
+            </a>
+
+            <a
+              href="https://mega.nz/file/cFdUCI7Z#-yAs05pxEkN73OCY9CFrh1BP7kBrWOmY7laTzP0fhLI"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.circleBtn}
+              title="Android App"
+            >
+              📱
+            </a>
+
+            <a
+              href="#"
+              style={styles.circleBtn}
+              title="Amwal"
+            >
+              💰
+            </a>
+
+          </div>
+        )}
+
+        <button
+          style={styles.mainBtn}
+          onClick={() => setMenuOpen(!menuOpen)}
         >
-          YouTube
-        </a>
-        
+          {menuOpen ? "✕" : "☰"}
+        </button>
 
-
-       <a
-        href="https://t.me/+U_a4R23Ux9w0OTU0"
-        target="_blank"
-        rel="noreferrer"
-        style={styles.community}
-      >
-        💬 Community
-      </a>
-
-      <a
-        href="https://mega.nz/file/cFdUCI7Z#-yAs05pxEkN73OCY9CFrh1BP7kBrWOmY7laTzP0fhLI"
-        target="_blank"
-        rel="noreferrer"
-        style={styles.android}
-      >
-       📱 Android App
-      </a>
- 
       </div>
-   
+
       <h1 style={styles.title}>HARM Dashboard</h1>
 
       <div style={styles.grid}>
         {categories.map((cat) => (
           <div
-            key={cat.name}
+            key={cat.id}
             style={{
               ...styles.card,
               opacity: cat.locked ? 0.5 : 1,
@@ -78,7 +112,6 @@ export default function Dashboard() {
 }
 
 const styles = {
-
   container: {
     background:
       "radial-gradient(circle at top,#220000,#000)",
@@ -87,22 +120,46 @@ const styles = {
     padding: "20px",
   },
 
-  topbar: {
+  floatingMenu: {
+    position: "fixed",
+    top: "25px",
+    right: "25px",
+    zIndex: 999,
+  },
+
+  linksBox: {
     display: "flex",
-    justifyContent: "flex-end",
-    gap: "20px",
-    marginBottom: "30px",
-    flexWrap: "wrap",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "12px",
+    marginBottom: "15px",
   },
 
-  telegram: {
-    color: "#229ED9",
-    fontWeight: "bold",
+  mainBtn: {
+    width: "60px",
+    height: "60px",
+    borderRadius: "50%",
+    border: "none",
+    background: "#8B0000",
+    color: "white",
+    fontSize: "30px",
+    cursor: "pointer",
+    boxShadow: "0 0 20px red",
   },
 
-  youtube: {
-    color: "#ff0000",
-    fontWeight: "bold",
+  circleBtn: {
+    width: "52px",
+    height: "52px",
+    borderRadius: "50%",
+    background: "#111",
+    border: "1px solid #400",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textDecoration: "none",
+    fontSize: "24px",
+    boxShadow:
+      "0 0 15px rgba(255,0,0,.6)",
   },
 
   title: {
@@ -144,6 +201,4 @@ const styles = {
     fontWeight: "bold",
     fontSize: "12px",
   },
-
 };
-                                                       
