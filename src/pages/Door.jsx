@@ -33,7 +33,7 @@ export default function Door() {
 
       {/* النص العلوي - يمكنك تغييره لأي شيء */}
       <div style={styles.eye}>
-       Second rule :I have ADHD. I'm not crazy—I'm a genius 
+       Second rule :I have ADHD.I'm not crazy—I'm a genius 
       </div>
 
       {/* الساعة */}
