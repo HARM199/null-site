@@ -33,8 +33,7 @@ export default function Door() {
 
       {/* النص العلوي - يمكنك تغييره لأي شيء */}
       <div style={styles.eye}>
- the first rule:you don't need love you need make money
-                 Beware of women 
+       Second rule :I have ADHD. I'm not crazy—I'm a genius 
       </div>
 
       {/* الساعة */}
