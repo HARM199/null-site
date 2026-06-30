@@ -1,20 +1,21 @@
 
 export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mode: "course", locked: false, items: [
 
-      { id: 1, title: "Udemy | Web Application Hacking & BurpSuite for Penetration Testing", desc: "", image: "/images/leak.jpg", type: "$2", tag: "NEW 2026", download: "https://www.mediafire.com/file/8d1zoof1wt8atok/Udemy-Web_Application_Hacking_&_BurpSuite_for_Penetration_Testing.7z" },
+      { id: 1, title: "practical-phishing-campaigns", desc: "", image: "/images/phish.jpeg", type: "$4", tag: "NEW 2026", download: "https://drive.google.com/file/d/1dUzXfTfDvqbwB9vp6epxQm6T0I8MKSfB/view?usp=drive_link" },
       { id: 2, title: "Udemy - Advanced Windows Active Directory Penetration Testing      ", desc: "", image: "/images/Screenshot.png", type: "$2", tag: "new 2026 ", download: "https://www.mediafire.com/file/40qmsxjswadvu6y/Freeeducationweb.com+Advanced+Windows+Active+Directory+Penetration+Testing.rar/file" },
       { id: 3, title: "PluralSight – Network Pen Testing with Python                      ", desc: "", image: "/images/ggggg.jpeg", type: "$2", tag: " ", download: "https://www.mediafire.com/file/235pgg8sjtm2hng/Network_Pen_Testing_with_Python.7z/file" },
       { id: 4, title: "Udemy - Advanced Practical Initial Access (Social Engineering)     ", desc: "", image: "/images/nnnn.jpeg", type: "$2", tag: "", download: "https://www.mediafire.com/file/l73xlulzt9nph92/Udemy+-+Advanced+Practical+Initial+Access+Social+Engineering.7z/file" },
       { id: 5, title: "Building Ransomware (Process)", desc: "", image: "/images/lk.jpeg", type: "$2", tag: "", download: "https://www.mediafire.com/file/dazxlor5qctnls4/Building_Ransomware_%2528Process%2529.rar/file" },
       { id: 6, title: "Building A Professional Mobile App Backdoor Attack", desc: "", image: "/images/ghgh.png", type: "$5", tag: "new 2026 EGP 250", download: "https://mega.nz/file/COA3jKhL" },
       { id: 7, title: "Ethical Hacking: Build Ransomware with Control Center POC", desc: "", image: "/images/kkkkk.jpeg", type: "$2", tag: "", download: "https://www.mediafire.com/file/j7obnr0jg49kyln/Freeeducationweb.com+Ethical+Hacking+Build+Ransomware+with+Control+Center+POC.rar/file" },
-      { id: 8, title: "Udemy Cyber Security Blue Team Incident Responder ", desc: "", image: "/images/mm.jpeg", type: "premium", tag: "price EGP 100", download: "https://mega.nz/file/MYNngBqR" },
+      { id: 8, title: "Udemy Cyber Security Blue Team Incident Responder ", desc: "", image: "/images/mm.jpeg", type: "$2", tag: "", download: "https://mega.nz/file/MYNngBqR" },
       { id: 9, title: "evilginx-mastery pro ", desc: "€399 VS  HARM price 2000", image: "/images/evilginx-mastery-box-image.png", type: "$40", tag: "", download: "#" },
       { id: 10, title: "mobile-application-penetration-testing-professiona", desc: "", image: "/images/gjjjjk.jpeg", type: "$7", tag: "", download: "#" },
       { id: 12, title: "big-bunty-hanting-v2", desc: "", image: "/images/images.png", type: "$3", tag: "update 2026 ", download: "#" },
       { id: 13, title: "wi-fi-hacking-v4", desc: "", image: "", type: "$3", tag: "NEW", download: "#" },
       { id: 14, title: "ip-camera-hacking", desc: "", image: "", type: "$8", tag: "NEW", download: "#" },
       { id: 15, title: "CEH v13 (AI)", desc: "", image: "/images/7.jpeg", type: "free", tag: "", download: "https://drive.google.com/file/d/1_H9NuXZ-jHM6OQ9mPK39XTPfasmqNpzo/view?usp=drive_link" },
+      { id: 13, title: "Udemy | Web Application Hacking & BurpSuite for Penetration Testing", desc: "", image: "/images/leak.jpg", type: "free", tag: "NEW2026", download: "https://www.mediafire.co" },
     ]
   },
 

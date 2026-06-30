@@ -22,7 +22,7 @@ export default function Dashboard() {
             <a href="https://youtube.com/@harm1903?si=QlpKuDppcsCVT9Qw" target="_blank" rel="noreferrer" style={styles.circleBtn}>▶️</a>
             <a href="https://t.me/+U_a4R23Ux9w0OTU0" target="_blank" rel="noreferrer" style={styles.circleBtn}>💬</a>
             <a href="https://mega.nz/file/cFdUCI7Z#-yAs05pxEkN73OCY9CFrh1BP7kBrWOmY7laTzP0fhLI" target="_blank" rel="noreferrer" style={styles.circleBtn}>📱</a>
-            <a href="#" style={styles.circleBtn}>💰</a>
+            <a href="https://amwaly.com/profile/harm" style={styles.circleBtn}>💰</a>
 
           </div>
         )}
