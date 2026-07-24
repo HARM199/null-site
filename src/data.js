@@ -133,7 +133,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
     title: "Servant",
     icon: "🤖",
     mode: "course",
-    locked: false,
+    locked: true,
     items: [
       { id: 1, title: "Scalping Master Course [Trading]", desc: "", image: "/images/cjj.jpeg", type: "", tag: "2023", download: "https://mega.nz/folder/8jkUjRxI#BNMmqKN8XMX2YcZYb2h9_w" },
       { id: 2, title: "qBittorrent", desc: "Torrent client", image: "https://via.placeholder.com/400x250", type: "free", tag: "", download: "#" },
