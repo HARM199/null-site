@@ -1,19 +1,19 @@
 
 export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mode: "course", locked: false, items: [
 
-      { id: 1, title: "practical-phishing-campaigns", desc: "", image: "/images/phish.jpeg", type: "$4", tag: "NEW 2026", download: "https://drive.google.com/file/d/1dUzXfTfDvqbwB9vp6epxQm6T0I8MKSfB/view?usp=drive_link" },
+      { id: 1, title: "practical-phishing-campaigns", desc: "", image: "/images/phish.jpeg", type: "$2", tag: "NEW 2026", download: "https://drive.google.com/file/d/1dUzXfTfDvqbwB9vp6epxQm6T0I8MKSfB/view?usp=drive_link" },
       { id: 2, title: "Udemy - Advanced Windows Active Directory Penetration Testing      ", desc: "", image: "/images/Screenshot.png", type: "$2", tag: "new 2026 ", download: "https://www.mediafire.com/file/40qmsxjswadvu6y/Freeeducationweb.com+Advanced+Windows+Active+Directory+Penetration+Testing.rar/file" },
       { id: 3, title: "PluralSight – Network Pen Testing with Python                      ", desc: "", image: "/images/ggggg.jpeg", type: "$2", tag: " ", download: "https://www.mediafire.com/file/235pgg8sjtm2hng/Network_Pen_Testing_with_Python.7z/file" },
       { id: 4, title: "Udemy - Advanced Practical Initial Access (Social Engineering)     ", desc: "", image: "/images/nnnn.jpeg", type: "$2", tag: "", download: "https://www.mediafire.com/file/l73xlulzt9nph92/Udemy+-+Advanced+Practical+Initial+Access+Social+Engineering.7z/file" },
       { id: 5, title: "Building Ransomware (Process)", desc: "", image: "/images/lk.jpeg", type: "$2", tag: "", download: "https://www.mediafire.com/file/dazxlor5qctnls4/Building_Ransomware_%2528Process%2529.rar/file" },
-      { id: 6, title: "Building A Professional Mobile App Backdoor Attack", desc: "", image: "/images/ghgh.png", type: "$5", tag: "new 2026 EGP 250", download: "https://mega.nz/file/COA3jKhL" },
+      { id: 6, title: "Building A Professional Mobile App Backdoor Attack", desc: "", image: "/images/ghgh.png", type: "$2", tag: "new 2026 EGP 250", download: "https://mega.nz/file/COA3jKhL" },
       { id: 7, title: "Ethical Hacking: Build Ransomware with Control Center POC", desc: "", image: "/images/kkkkk.jpeg", type: "$2", tag: "", download: "https://www.mediafire.com/file/j7obnr0jg49kyln/Freeeducationweb.com+Ethical+Hacking+Build+Ransomware+with+Control+Center+POC.rar/file" },
       { id: 8, title: "Udemy Cyber Security Blue Team Incident Responder ", desc: "", image: "/images/mm.jpeg", type: "$2", tag: "", download: "https://mega.nz/file/MYNngBqR" },
-      { id: 9, title: "evilginx-mastery pro ", desc: "€399 VS  HARM price 2000", image: "/images/evilginx-mastery-box-image.png", type: "$40", tag: "", download: "#" },
-      { id: 10, title: "mobile-application-penetration-testing-professiona", desc: "", image: "/images/gjjjjk.jpeg", type: "$7", tag: "", download: "#" },
-      { id: 12, title: "big-bunty-hanting-v2", desc: "", image: "/images/images.png", type: "$3", tag: "update 2026 ", download: "#" },
-      { id: 13, title: "wi-fi-hacking-v4", desc: "", image: "", type: "$3", tag: "NEW", download: "#" },
-      { id: 14, title: "ip-camera-hacking", desc: "", image: "", type: "$8", tag: "NEW", download: "#" },
+      { id: 9, title: "evilginx-mastery pro ", desc: "€399 VS  HARM price 2000", image: "/images/evilginx-mastery-box-image.png", type: "$5", tag: "", download: "#" },
+      { id: 10, title: "mobile-application-penetration-testing-professiona", desc: "", image: "/images/gjjjjk.jpeg", type: "$2", tag: "", download: "#" },
+      { id: 12, title: "big-bunty-hanting-v2", desc: "", image: "/images/images.png", type: "$2", tag: "update 2026 ", download: "#" },
+      { id: 13, title: "wi-fi-hacking-v4", desc: "", image: "", type: "$2", tag: "NEW", download: "#" },
+      { id: 14, title: "ip-camera-hacking", desc: "", image: "", type: "$2", tag: "NEW", download: "#" },
       { id: 15, title: "CEH v13 (AI)", desc: "", image: "/images/7.jpeg", type: "free", tag: "", download: "https://drive.google.com/file/d/1_H9NuXZ-jHM6OQ9mPK39XTPfasmqNpzo/view?usp=drive_link" },
       { id: 13, title: "Udemy | Web Application Hacking & BurpSuite for Penetration Testing", desc: "", image: "/images/leak.jpg", type: "free", tag: "NEW2026", download: "https://www.mediafire.co" },
     ]
@@ -54,7 +54,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
       { id: 8, title: "WARZONE RAT v3.03 + VideoTutorial [2026]", desc: "", image: "/images/kjhg.jpeg", type: "2026 $2", tag: " 2026", download: "#" },
       { id: 9, title: "Revenge RAT v3", desc: "", image: "/images/hhhhhkk.jpeg", type: "", tag: "NEW 2026 $1  ", download: "#" },
       { id: 10, title: "Redline Stealer v20.2 – Cracked", desc: "", image: "/images/jgjgkkg.jpeg", type: "$4", tag: "", download: "https://drive.proton.me/urls/HWF3TDYSPM#geCvBaHITAX8" },
-      { id: 11, title: "BT MOB v4 [Android 15 RAT]", desc: "", image: "/images/bt.png", type: "HOT $10", tag: "", download: "#" },
+      { id: 11, title: "BT MOB v4 [Android 15 RAT]", desc: "", image: "/images/bt.png", type: "HOT $4", tag: "", download: "#" },
       { id: 12, title: "DedSec - A Cybersecurity toolkit ", desc: "", image: "/images/kllg.jpeg", type: "free", tag: "", download: "DedSec - A Cybersecurity toolkit fur Termux" },
       { id: 13, title: "Craxsrat Clean version v7.6", desc: "", image: "/images/Craxsrat  v7.6.png", type: "$2", tag: "", download: "https://www.mediafire.com/file/bf21ctizpjmibjs/CraxsRat+7.6+Cracked.rar" },
       { id: 14, title: "Billionmail", desc: "", image: "/images/ty.png", type: "free", tag: "", download: "https://github.com/Billionmail/BillionMail" },
@@ -129,11 +129,11 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "Servant",
+    id: "Servant",
     title: "Servant",
     icon: "🤖",
     mode: "course",
-    locked: true,
+    locked: false,
     items: [
       { id: 1, title: "Scalping Master Course [Trading]", desc: "", image: "/images/cjj.jpeg", type: "", tag: "2023", download: "https://mega.nz/folder/8jkUjRxI#BNMmqKN8XMX2YcZYb2h9_w" },
       { id: 2, title: "qBittorrent", desc: "Torrent client", image: "https://via.placeholder.com/400x250", type: "free", tag: "", download: "#" },
@@ -159,7 +159,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "Other",
+    id: "Other",
     title: "Other",
     icon: "⚙️",
     mode: "Course",
@@ -190,7 +190,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
 
   
   {
-    name: "systems",
+    id: "systems",
     title: "Systems",
     icon: "🎭",
     locked: true,
@@ -200,7 +200,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   // 🔒 COMING SOON SECTIONS
 
   {
-    name: "ai-advanced",
+    id: "ai-advanced",
     title: "Advanced AI",
     icon: "🧠",
     locked: true,
@@ -208,7 +208,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "cloud",
+    id: "cloud",
     title: "Cloud Systems",
     icon: "☁️",
     locked: true,
@@ -216,7 +216,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "devops",
+    id: "devops",
     title: "DevOps",
     icon: "👾",
     locked: true,
@@ -224,7 +224,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "cyber",
+    id: "cyber",
     title: "cyber",
     icon: "🛡️",
     locked: true,
@@ -232,7 +232,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "blockchain",
+    id: "blockchain",
     title: "Blockchain",
     icon: "⛓️",
     locked: true,
@@ -240,7 +240,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "game-dev",
+    id: "game-dev",
     title: "Game Dev",
     icon: "🎮",
     locked: true,
@@ -248,7 +248,7 @@ export const categories = [ { id: "courses", title: "Courses", icon: "🎓", mod
   },
 
   {
-    name: "future-tech",
+    id: "future-tech",
     title: "Future Tech",
     icon: "🚀",
     locked: true,
