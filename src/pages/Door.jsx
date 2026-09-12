@@ -33,7 +33,7 @@ export default function Door() {
 
       {/* النص العلوي - يمكنك تغييره لأي شيء */}
       <div style={styles.eye}>
-       Rule Three: Everyone needs love, but be careful. 
+       انا هرم انا القوه انا الشر انا لا اغفر الخطايا . 
       </div>
 
       {/* الساعة */}
